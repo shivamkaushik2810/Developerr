@@ -1,0 +1,3 @@
+This is a new file created by Java.
+This file is used to demonstrate file writing in Java.
+End of file writing example.
