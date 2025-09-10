@@ -1,11 +1,12 @@
-package VivekSirJava;
 import java.util.*;
 
-public class LocaleDemo {
+public class Locale {
+    
+
    static  Locale locale;
    static void loadFiles(Locale locale){
     ResourceBundle rb;
-    rb=ResourceBundle.getBundle(baseName)
+    rb = ResourceBundle.getBundle("Messages", locale);
 
     }
     public static void main(String[] args) {
@@ -30,3 +31,6 @@ public class LocaleDemo {
     }
     
 }
+
+    
+

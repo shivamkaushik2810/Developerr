@@ -19,7 +19,7 @@ public class BinarySearch{
 }
     
     public static void main(String[] args) {
-        int n[] = {1, 2, 3, 4, 5};
+        int n[] = {1, 20, 3, 4, 5};
         int key = 5;
         int result = binary(n, key);
         if (result == -1) {

@@ -1,7 +1,8 @@
-package VivekSirJava;
-
-
 public class SingleTon {
+    
+
+
+
     public static void main(String[] args) {
           Car c1=Car.createObject("thar","mahindera","petrol");
          Car c2=Car.createObject("honda","suzuki","diesel");
@@ -9,7 +10,15 @@ public class SingleTon {
         System.out.println(c1.name);
          System.out.println(c2.name);
           System.out.println(c3.name);
+        // Print fuel types to use the _Fueltype variable
+        System.out.println(c1._Fueltype);
+        System.out.println(c2._Fueltype);
+        System.out.println(c3._Fueltype);
 
+        // Print brand to use the 'brand' variable
+        System.out.println(c1.brand);
+        System.out.println(c2.brand);
+        System.out.println(c3.brand);
         
     }
 }
@@ -38,3 +47,5 @@ class Car{
     //new car
 
 }
+
+    
