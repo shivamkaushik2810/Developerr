@@ -1,4 +1,4 @@
-public class PrintDigit {
+public class PrintDigitRec {
     static void printNo(int n){
         if (n==0) {
             return;
@@ -9,7 +9,7 @@ public class PrintDigit {
         System.out.println(n);//1 2 3 4 5
     }
     public static void main(String[] args) {
-        PrintDigit.printNo(5);
+        PrintDigitRec.printNo(5);
         
     }
     
