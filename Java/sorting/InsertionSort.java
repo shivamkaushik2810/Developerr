@@ -1,6 +1,6 @@
 class InsertionSort{
     public static void insertionSort(int[] arr) {
-        for(int i=0;i<arr.length-1;i++){
+        for(int i=0;i<=arr.length-1;i++){
             int current=arr[i];
             int prev=i-1;
             while(prev>=0 && arr[prev]>current){
