@@ -1,4 +1,4 @@
-public class Test {
+public class SumOfDigitRec1 {
     static int sum(int n){
         if(n<=0){
         return 0;
@@ -8,7 +8,7 @@ public class Test {
     
 }
 public static void main(String[] args) {
-   System.out.println( Test.sum(-1-2-3-4-5));
+   System.out.println( SumOfDigitRec1.sum(12345));
     
 }
 }

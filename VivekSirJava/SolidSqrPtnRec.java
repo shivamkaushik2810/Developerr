@@ -6,19 +6,24 @@ public class SolidSqrPtnRec{
         System.out.print("*");
         printCol(colCount-1);
     }
-       static void printRow(int rowCount,int colCount){
-        if(rowCount<=0){
-            return;
+       static void printRow(int rowCount, int colCount){
+            if(rowCount<=0){
+                return;
+            }
+            printCol(colCount);
+            System.out.println();
+            printRow(rowCount-1, colCount);
         }
-
-        printCol(colCount);
-        System.out.println();
-        printRow(rowCount-1,colCount);
-    }
+        static void printSolid(int row,int col){
+            printRow(row, col);
+        }
     
+  
+
     public static void main(String[] args) {
-        SolidSqrPtnRec.printRow(100,50);
+        SolidSqrPtnRec.printSolid(100, 10);
 
         
     }
+    
 }
