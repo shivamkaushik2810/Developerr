@@ -1,12 +1,12 @@
 public class SwitchCase {
     public static void main(String[] args) {
-        int day = 3; // Example day number
+        int day = 1; // Example day number
         String dayName;
 
         switch (day) {
             case 1:
                 dayName = "Monday";
-                break;
+               break;
             case 2:
                 dayName = "Tuesday";
                 break;
