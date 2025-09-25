@@ -9,7 +9,7 @@ class InsertAtTop{
         st.push(12);
         st.push(20);
         System.out.println(st);
-        int[] ar=new int[2];
+       // int[] ar=new int[2];
         int top3 = (int) st.get(st.size() - 3);
         System.out.println("Element at top 3rd position: " + top3);
         st.add(st.size() - 2, 100); // Insert 100 at the 3rd position from the top

@@ -18,7 +18,7 @@ public class MyStack {
 
     public static void main(String[] args) {
         myStack ms = new myStack();
-        System.out.println("");
+        System.out.println(ms);
 
     }
 }

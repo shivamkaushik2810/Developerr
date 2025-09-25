@@ -1,6 +1,10 @@
 class College{
     String name;
     int age;
+    College(){
+        name="abc";
+        age=20;
+    }
     public void sec(){
         System.out.println("this is ypur sectoin");
     }
