@@ -2,6 +2,9 @@
 class Test{
     String name;
     int age;
+    Test(){
+        
+    }
 }
 
 class DefaultConstructor{

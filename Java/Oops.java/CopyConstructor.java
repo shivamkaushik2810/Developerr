@@ -8,7 +8,9 @@ class Test{
         this.name=t1.name;
         this.age=t1.age;
         }
-    Test(){
+    Test(String s,int n){
+        this.name=s;
+        this.age=n;
 
     }
     public void display(){
@@ -21,9 +23,9 @@ class Test{
 
 class CopyConstructor {
     public static void main(String[] args) {
-        Test t1=new Test();
-        t1.name="shivam";
-        t1.age=20;
+        Test t1=new Test("shivam",20);
+       // t1.name="shivam";
+        //t1.age=20;
 
         // Using the copy constructor to create a new object with the same values
         // as the existing object t1
