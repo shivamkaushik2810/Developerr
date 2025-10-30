@@ -1,4 +1,4 @@
-public class Armstrong {
+class ArmstrongA {
     public static void main(String[] args) {
         int num = 153; 
         int originalNum = num;

@@ -1,5 +1,5 @@
 class Count{
-    public static void CountVovelsConsonants(String str){
+    public  void CountVovelsConsonants(String str){
         int vowels=0;
         int consonants=0;
         int space=0;
@@ -9,8 +9,6 @@ class Count{
             if(ch!=' '&&(ch>='a'&&ch<='z')){
                 if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'){
                     vowels++;
-
-
                 }
                 else{
                     consonants++;
@@ -18,16 +16,10 @@ class Count{
             }else{
                 space++;
             }
-
         }
         System.out.println(vowels);
         System.out.println(consonants);
         System.out.println(space);
-        
-
-
-        
-
     }
 }
 public class CountVovelsConsonants{

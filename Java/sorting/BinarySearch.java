@@ -1,5 +1,5 @@
-public class BinarySearch{
-    public static int binary(int n[],int key){
+ class BinarySearch{
+     static int binary(int n[],int key){
         int start=0, end=n.length-1;
         while(start<=end){
             int mid=(start + end) / 2;

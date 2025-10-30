@@ -11,7 +11,7 @@ class DublicateZeroA{
     }
     
 }
-public class DublicateZero{
+public class DublicateLastNoRemove{
     public static void main(String[] args){
         DublicateZeroA d=new DublicateZeroA();
         String arr="102300999";
