@@ -112,7 +112,9 @@ public  class CreateAddLast {
         size--;
         return val;
     }
-    //itr search6
+
+
+    //itr search
     
         public int itrSearch(int key){
         Node temp=head;
@@ -131,6 +133,7 @@ public  class CreateAddLast {
 
 
     }
+    //reverse ll
     public int reverseLL(){
         Node prev=null;
         Node curr=tail=head;
@@ -144,6 +147,33 @@ public  class CreateAddLast {
         }
         head=prev;
         return 0;
+    }
+
+
+    //remove n'th node from end
+    public void deleteNthFromEnd(int n){
+        //calculate size
+        int sz=0;
+        Node temp=head;
+        while(temp!=null){
+            temp=temp.next;
+            sz++;
+        }
+        //n=sz-size from start
+        if(n==sz){
+            head=head.next;
+            return;
+        }
+        int i=1;
+        int itofind=sz-n;
+        Node prev=head;
+        while(i<itofind){
+            prev=prev.next;
+            i++;
+        }
+        prev.next=prev.next.next;
+    
+
     }
 
     public static void main(String[] args) {
