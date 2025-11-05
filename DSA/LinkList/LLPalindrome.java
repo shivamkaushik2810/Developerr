@@ -6,20 +6,22 @@ class Node {
         this.data = data;
         this.next = null;
     }
-    public static Node head;
-    public static Node tail;
+    public static Node head;//properties of linked list
+    public static Node tail;//properties of linked list
 
     public void addLast(int data){//0(1) constant time
-        //1create new node
+        //step 1 create new node
         Node newNode=new Node(data);
         //check if ll is empty
-        if(head==null){
+        if(head==null){    
             head=tail=newNode;
             return;
         }
-        //2tail.next=newNode
+        //step 2 tail.next=newNode
         tail.next=newNode;
-        //3tail=newNode
+
+        //step 3 tail=newNode
+
         tail=newNode;
     }
     public void printLL(){
@@ -44,6 +46,7 @@ class Node {
         }
         return slow;//slow is middle node
     }
+    //check palindrome
     public boolean isPalindrome(){
         if(head==null || head.next==null){// base case null or single node
             return true;
@@ -84,10 +87,10 @@ class Node {
 public class LLPalindrome {
     public static void main(String[] args) {
         Node ll=new Node(0);
-       // ll.addLast(1);
-        //ll.addLast(2);
-        //ll.addLast(2);
-       // ll.addLast(1);
+        ll.addLast(1);
+        ll.addLast(2);
+        ll.addLast(2);
+        ll.addLast(1);
         ll.printLL();
         System.out.println(ll.isPalindrome());
     }

@@ -21,7 +21,7 @@ class InsertAtBottom1{
             
       }
       System.out.println(st);
-      st.push(100);//it will insert at bottomf
+      st.push(100);//it will insert at bottom
       for(int i=j-1;i>=0;i--){
           st.push(ar[i]);
       }
