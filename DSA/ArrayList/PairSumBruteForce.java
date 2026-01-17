@@ -1,5 +1,5 @@
-import java.util.*;
-public class PairSum {
+import java.util.ArrayList;
+public class PairSumBruteForce {
     public static boolean pairSum(ArrayList<Integer> list, int target) {
         for (int i = 0; i < list.size(); i++) {
             for (int j = 0; j < list.size(); j++) {

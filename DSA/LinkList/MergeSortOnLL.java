@@ -14,7 +14,7 @@
 
     //add in front ll
     public void addFirst(int data){//0(1) constant time
-        //1create new node
+        //step 1=>create new node
         Node newNode=new Node(data);
         
         //check if ll is empty
@@ -22,9 +22,9 @@
             head=tail=newNode;
             return;
         }
-         //2new node next=head
+         //step 2=>new node next=head
         newNode.next=head;//link one node to another
-        //3head=newNode
+        //step 3=>head=newNode
         head=newNode;
     }
     //add in last ll

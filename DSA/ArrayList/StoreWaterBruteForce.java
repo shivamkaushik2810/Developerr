@@ -1,15 +1,15 @@
-
+ 
 import java.util.ArrayList;
 
-public class BruteForce {
+public class StoreWaterBruteForce {
     public static int storeWater(ArrayList<Integer> height){
         int maxWater=0;
         //brute force
         for(int i=0;i<height.size();i++){
             for(int j=i+1;j<height.size();j++){
-                int ht=Math.min(height.get(i),height.get(j));
+                int findHeight=Math.min(height.get(i),height.get(j));
                 int width=j-i;
-                int currWater=ht*width;
+                int currWater=findHeight*width;
                 maxWater=Math.max(maxWater,currWater);
 
             }
