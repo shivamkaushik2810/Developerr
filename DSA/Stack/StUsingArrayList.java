@@ -11,7 +11,7 @@ class Stack1{
     }
     //pop
     public int pop(){
-        if(isEmpty()){
+        if(isEmpty()){//base case
             return -1;
         }
         int top = list.get(list.size() - 1);
@@ -20,7 +20,7 @@ class Stack1{
     }
     //peek
     public int peek(){
-        if(isEmpty()){
+        if(isEmpty()){//base case
             return -1;
         }
         return list.get(list.size() - 1);
