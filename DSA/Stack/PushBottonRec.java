@@ -1,37 +1,26 @@
-import java.util.*;
-class PushAtBotton{
-    public void pushAtBottam(Stack s,int data){
-        Stack st=new Stack();
-        st.push(1);
-        st.push(2); 
-        st.push(3);
-        st.push(4);
-        st.push(5);
-        System.out.println(st);
-        if(st.isEmpty()){
-            st.push(data);
+import java.util.Stack;
+class StackA{
+    public void pushAtBottam(Stack<Integer> s, int data){
+        if(s.isEmpty()){
+            s.push(data);
             return;
         }
-        while(!st.isEmpty()){
-            int top=(int)st.pop();
-            st.push(top);
-        
-        pushAtBottam(st,data);
-        st.push(top);
-        }
-
-
-        
-
-
-        
+        int top=s.pop();
+        pushAtBottam(s, data);
+        s.push(top);
     }
 }
 public class PushBottonRec{
     
     public static void main(String[] args) {
-        PushAtBotton p=new PushAtBotton();
-        Stack s=new Stack();
-        p.pushAtBottam(s,10);
+        Stack<Integer> s=new Stack<>();
+        s.push(1);
+        s.push(2);
+        s.push(3);
+        while (!s.isEmpty()) {
+            System.out.println(s.pop());
+    
+            
+        }
+        }
     }
-}
