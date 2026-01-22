@@ -153,29 +153,32 @@ public  class CreateAddLast {
     //remove n'th node from end
     public void deleteNthFromEnd(int n){
         //calculate size
-        int sz=0;
+        int size=0;
         Node temp=head;
         while(temp!=null){
             temp=temp.next;
-            sz++;
+            size++;
         }
         //n=sz-size from start
-        if(n==sz){
+        if(n==size){
             head=head.next;
             return;
         }
+        //size-n
         int i=1;
-        int itofind=sz-n;
+        int indextofind=size-n;
         Node prev=head;
-        while(i<itofind){
+        while(i<indextofind){
             prev=prev.next;
             i++;
         }
         prev.next=prev.next.next;
+        
     
 
     }
 
+    
     public static void main(String[] args) {
         CreateAddLast ll=new CreateAddLast();
         ll.printLL();
@@ -199,6 +202,8 @@ public  class CreateAddLast {
         ll.printLL();
          System.out.println("" + ll.itrSearch(3));
             ll.reverseLL();
+            ll.printLL();
+            ll.deleteNthFromEnd(2);
             ll.printLL();
 
 
