@@ -88,9 +88,9 @@ public class LLPalindrome {
     public static void main(String[] args) {
         Node ll=new Node(0);
         ll.addLast(1);
-        ll.addLast(1);
-      //  ll.addLast(2);
-      //  ll.addLast(1);
+        ll.addLast(2);
+      ll.addLast(2);
+       ll.addLast(1);
         ll.printLL();
         System.out.println(ll.isPalindrome());
     }
