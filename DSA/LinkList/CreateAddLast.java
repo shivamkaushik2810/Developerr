@@ -153,11 +153,11 @@ public  class CreateAddLast {
     //remove n'th node from end
     public void deleteNthFromEnd(int n){
         //calculate size
-        int size=0;
+        int localSize=0;
         Node temp=head;
         while(temp!=null){
             temp=temp.next;
-            size++;
+            localSize++;
         }
         //n=sz-size from start
         if(n==size){

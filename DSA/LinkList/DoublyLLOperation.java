@@ -12,8 +12,8 @@ public class DoublyLLOperation {
 
 
     }
-    public static  Node head;
-    public static Node tail;
+       Node head;
+      Node tail;
     public static int size;
     //add first
     public void addFirst(int data){
